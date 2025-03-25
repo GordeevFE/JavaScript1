@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ветвления в JavaScript</title>
+</head>
+<body>
+    <h1>Работа с ветвлениями</h1>
+    
+    <script>
+        // 1. Проверка возраста
+        let age = prompt("Сколько вам лет?", "18");
+        
+        if (age >= 18) {
+            window.location.href = "adult_page.html";
+        } else {
+            alert("Вам нет 18-ти лет");
+        }
+        
+        // 2. Оператор выбора switch
+        let dessert = prompt("Выберите десерт (сэндвич, пудинг, слойка):", "сэндвич");
+        let price;
+        
+        switch(dessert.toLowerCase()) {
+            case "сэндвич":
+                price = 100;
+                break;
+            case "пудинг":
+                price = 80;
+                break;
+            case "слойка":
+                price = 60;
+                break;
+            default:
+                price = "неизвестно";
+        }
+        
+        alert(`Цена ${dessert}: ${price}$`);
+    </script>
+</body>
+</html>
