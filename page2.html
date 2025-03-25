@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Функции в JavaScript</title>
+</head>
+<body>
+    <h1>Работа с функциями</h1>
+    
+    <!-- 1. Форма с кнопкой и onclick -->
+    <button onclick="alert('Вы нажали кнопку!')">Нажми меня</button>
+    
+    <!-- 2. Собственная функция -->
+    <button onclick="concatenateStrings()">Сложить строки</button>
+    
+    <!-- 3. Открытие другого файла -->
+    <button onclick="window.open('other_page.html')">Открыть другой файл</button>
+    
+    <script>
+        // Функция для сложения подстрок
+        function concatenateStrings() {
+            let part1 = "Hello, ";
+            let part2 = "world!";
+            document.write("<p>" + part1 + part2 + "</p>");
+        }
+    </script>
+</body>
+</html>
