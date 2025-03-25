@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JavaScript Задание 1</title>
+</head>
+<body>
+    <h1>Основные конструкции JavaScript</h1>
+    
+    <script>
+        // 1. Вывод "привет!" с помощью alert и document.write
+        alert("Привет!");
+        document.write("<p>Привет!</p>");
+        
+        // 2. Сумма переменных
+        let x = 5;
+        let y = 7;
+        document.write(`<p>Сумма ${x} и ${y} равна ${x + y}</p>`);
+        
+        // 3. Тестирование parseInt, parseFloat и isNaN
+        document.write("<h3>Тестирование функций преобразования:</h3>");
+        
+        // parseInt примеры
+        document.write("<p>parseInt('123'): " + parseInt("123") + "</p>");
+        document.write("<p>parseInt('12.3'): " + parseInt("12.3") + "</p>");
+        document.write("<p>parseInt('abc'): " + parseInt("abc") + "</p>");
+        
+        // parseFloat примеры
+        document.write("<p>parseFloat('123.45'): " + parseFloat("123.45") + "</p>");
+        document.write("<p>parseFloat('12.3abc'): " + parseFloat("12.3abc") + "</p>");
+        document.write("<p>parseFloat('abc'): " + parseFloat("abc") + "</p>");
+        
+        // isNaN примеры
+        document.write("<p>isNaN(123): " + isNaN(123) + "</p>");
+        document.write("<p>isNaN('123'): " + isNaN("123") + "</p>");
+        document.write("<p>isNaN('abc'): " + isNaN("abc") + "</p>");
+    </script>
+</body>
+</html>
